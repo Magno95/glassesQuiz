@@ -1,0 +1,141 @@
+#ct_wow__search {
+    //CTA
+    .ct_cta {
+        text-align: center;
+        border-radius: 40px;
+        padding: 9px 25px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: normal;
+        text-shadow: none;
+        box-shadow: none;
+        transition: background-color 0.6s ease, color 0.6s ease,
+            transform 0.4s ease;
+
+        height: 40px;
+        display: inline-flex;
+        box-sizing: border-box;
+        align-items: center;
+        text-decoration: none;
+        justify-content: center;
+        white-space: nowrap;
+        min-width: 130px;
+        cursor: pointer;
+        border: none;
+        border: 1px solid #000;
+        //COLOR VARIANT
+        &.ct_cta__black {
+            background-color: $black;
+            color: #fff;
+
+            @media (min-width: 1025px) {
+                &:hover {
+                    background-color: $black_hover;
+                    border-color: $black_hover;
+                    color: #fff;
+                }
+            }
+            @media (max-width: 1024px) {
+                &:active {
+                    background-color: #fff;
+                    border-color: #fff;
+                    color: $black;
+                }
+            }
+            &.ct_active {
+                background-color: #fff;
+                border-color: #fff;
+                color: $black;
+            }
+        }
+        &.ct_cta__white {
+            background-color: #fff;
+            color: $black;
+
+            @media (min-width: 1025px) {
+                &:hover,
+                &:focus {
+                    background-color: $black;
+                    border-color: $black;
+                    color: #fff;
+                }
+            }
+            @media (max-width: 1024px) {
+                background-color: $black;
+                border-color: $black;
+                color: #fff;
+            }
+            &.ct_active {
+                background-color: $black;
+
+                color: #fff;
+            }
+        }
+
+        // LENGTH VARIANTS
+        &.ct_cta__large {
+            min-width: 180px;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .ct__desk__hide {
+            display: none;
+        }
+    }
+}
+
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    * {
+        font-family: Helvetica, sans-serif;
+    }
+    #cta1 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .cta {
+        text-align: center;
+        border-radius: 100px;
+        padding: 9px 50px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: normal;
+        text-shadow: none;
+        box-shadow: none;
+        transition: background-color 0.6s ease, color 0.6s ease,
+            transform 0.4s ease;
+
+        height: 80px;
+        display: inline-flex;
+        box-sizing: border-box;
+        align-items: center;
+        text-decoration: none;
+        justify-content: center;
+        white-space: nowrap;
+        min-width: 130px;
+        cursor: pointer;
+        border: none;
+
+        background-color: black;
+        color: #fff;
+    }
+    .cta:hover {
+        background-color: #292828;
+        border-color: #292828;
+    }
+}
