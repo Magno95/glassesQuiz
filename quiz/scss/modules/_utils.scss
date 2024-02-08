@@ -1,6 +1,6 @@
-#ct_wow__search {
+#wow__search {
     //CTA
-    .ct_cta {
+    .cta {
         text-align: center;
         border-radius: 40px;
         padding: 9px 25px;
@@ -25,7 +25,7 @@
         border: none;
         border: 1px solid #000;
         //COLOR VARIANT
-        &.ct_cta__black {
+        &.cta__black {
             background-color: $black;
             color: #fff;
 
@@ -43,13 +43,13 @@
                     color: $black;
                 }
             }
-            &.ct_active {
+            &.active {
                 background-color: #fff;
                 border-color: #fff;
                 color: $black;
             }
         }
-        &.ct_cta__white {
+        &.cta__white {
             background-color: #fff;
             color: $black;
 
@@ -66,7 +66,7 @@
                 border-color: $black;
                 color: #fff;
             }
-            &.ct_active {
+            &.active {
                 background-color: $black;
 
                 color: #fff;
@@ -74,13 +74,13 @@
         }
 
         // LENGTH VARIANTS
-        &.ct_cta__large {
+        &.cta__large {
             min-width: 180px;
         }
     }
 
     @media (min-width: 1025px) {
-        .ct__desk__hide {
+        ._desk__hide {
             display: none;
         }
     }

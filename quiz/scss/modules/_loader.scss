@@ -1,83 +1,81 @@
-#ct_wow__search{
-    #ct_wow__search__loader{
+#wow__search {
+    #wow__search__loader {
         background-color: #fff;
         opacity: 0;
-        transition: opacity .6s ease;
-        transition-delay:1s ;
+        transition: opacity 0.6s ease;
+        transition-delay: 1s;
         width: 100%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
         z-index: 10;
-        &:not(.ct_in){
-        pointer-events: none;
-        
+        &:not(.in) {
+            pointer-events: none;
         }
-        &.ct_in{
+        &.in {
             opacity: 1;
-            transition-delay:0s ;
-            .ct_wow__search__results_loader__img_container_wrap{
-                .ct_wow__search__results_loader__img_container{
+            transition-delay: 0s;
+            .wow__search__results_loader__img_container_wrap {
+                .wow__search__results_loader__img_container {
                     transform: scale(1);
                     opacity: 1;
                 }
             }
-            h3{
+            h3 {
                 opacity: 1;
-                transition-delay: .7s;
+                transition-delay: 0.7s;
             }
         }
-        .ct_wow__search__results_loader__img_container_wrap{
+        .wow__search__results_loader__img_container_wrap {
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
 
-            &:nth-child(1){
+            &:nth-child(1) {
                 width: 50vw;
                 height: 50vw;
-                .ct_wow__search__results_loader__img_container{
+                .wow__search__results_loader__img_container {
                     transition-delay: 0;
-
                 }
-                @media(max-width:1024px){
+                @media (max-width: 1024px) {
                     width: 80vw;
                     height: 80vw;
                 }
-                img{
+                img {
                     animation: rotate_ 20s linear infinite forwards;
                 }
             }
-            &:nth-child(2){
+            &:nth-child(2) {
                 width: 70vw;
                 height: 70vw;
-                .ct_wow__search__results_loader__img_container{
-                    transition-delay: .2s;
+                .wow__search__results_loader__img_container {
+                    transition-delay: 0.2s;
                 }
-                @media(max-width:1024px){
+                @media (max-width: 1024px) {
                     width: 120vw;
                     height: 120vw;
                 }
-                img{
+                img {
                     animation: rotate_ 25s linear infinite forwards;
                 }
             }
-            &:nth-child(3){
+            &:nth-child(3) {
                 width: 100vw;
                 height: 100vw;
-                .ct_wow__search__results_loader__img_container{
-                    transition-delay: .5s;
+                .wow__search__results_loader__img_container {
+                    transition-delay: 0.5s;
                 }
-                @media(max-width:1024px){
+                @media (max-width: 1024px) {
                     width: 160vw;
                     height: 160vw;
                 }
-                img{
+                img {
                     animation: rotate_ 30s linear infinite forwards;
                 }
             }
-            .ct_wow__search__results_loader__img_container{
+            .wow__search__results_loader__img_container {
                 width: 100%;
                 height: 100%;
                 display: block;
@@ -85,33 +83,36 @@
                 left: 0;
                 top: 0;
                 opacity: 0;
-                transform:  scale(.9);
-                transition: all .6s ease;   
-                img{
+                transform: scale(0.9);
+                transition: all 0.6s ease;
+                img {
                     display: block;
                     width: 100%;
                     height: 100%;
-                    
                 }
                 @keyframes rotate_ {
-                    from{transform: rotate(0);}
-                    to{transform: rotate(720deg);}
+                    from {
+                        transform: rotate(0);
+                    }
+                    to {
+                        transform: rotate(720deg);
+                    }
                 }
             }
         }
-    h3{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        font-size: 2.4vw;
-        font-weight: 300;
-        opacity: 0;
-        transition: opacity .6s ease;
-        margin: 0;
-        @media(max-width:1024px){
-            font-size: 4.5vw;
+        h3 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.4vw;
+            font-weight: 300;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            margin: 0;
+            @media (max-width: 1024px) {
+                font-size: 4.5vw;
+            }
         }
     }
-  }
 }

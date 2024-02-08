@@ -10,7 +10,7 @@
 @import "./modules/results";
 @import "./modules/accessibility";
 
-#ct_wow__search {
+#wow__search {
     background-color: #fff;
     height: 100vh;
     width: 100vw;
@@ -28,14 +28,14 @@
         height: var(--ct-wow-search-height);
         transform: translateY(100vh);
     }
-    &.ct_in {
+    &.in {
         transform: translateY(0%) !important;
     }
-    &.ct_active {
+    &.active {
         opacity: 1 !important;
         pointer-events: all !important;
     }
-    .ct_wow__search__products_container {
+    .wow__search__products_container {
         width: 100%;
         height: 100%;
         @media (max-width: 1024px) {
@@ -48,7 +48,7 @@
                 display: none;
             }
         }
-        .ct_wow__search__products_list {
+        .wow__search__products_list {
             display: grid;
             align-items: center;
             width: 100%;
@@ -82,15 +82,15 @@
                 height: 120%;
                 padding-bottom: 20%;
             }
-            &:not(.ct_in) {
-                .ct_wow_search__product {
+            &:not(.in) {
+                .wow_search__product {
                     img {
                         opacity: 0;
                         transform: scale(0);
                     }
                 }
             }
-            .ct_wow_search__product {
+            .wow_search__product {
                 list-style: none;
                 // outline: 1px dashed red;
                 height: 12vw;
@@ -118,7 +118,7 @@
                             transform: scale(1.1);
                         }
                     }
-                    .ct_wow_search__img_container {
+                    .wow_search__img_container {
                         width: 100%;
                         position: absolute;
                         left: 50%;
@@ -135,7 +135,7 @@
                     }
                 }
             }
-            .ct_wow_search__input_placeholder {
+            .wow_search__input_placeholder {
                 grid-area: input;
                 width: 24.333vw;
                 min-height: 150px;
@@ -146,12 +146,12 @@
                 }
             }
         }
-        .ct_wow_search__product__wrap {
+        .wow_search__produ_wrap {
             width: 100%;
             height: 100%;
             transition: transform 0.8s ease;
         }
-        .ct_wow__search__pos_placeholders {
+        .wow__search__pos_placeholders {
             position: fixed;
             top: 0;
             left: 0;
@@ -166,7 +166,7 @@
             @media (max-width: 1024px) {
                 height: 100%;
             }
-            .ct_wow__search__pos_placeholders__wrapper {
+            .wow__search__pos_placeholders__wrapper {
                 position: absolute;
                 width: 62.66667vw;
                 height: 62.66667vw;
@@ -180,7 +180,7 @@
                 @media (max-width: 1024px) {
                     top: 60vw;
                 }
-                .ct_wow__search__pos_placeholders__mainCircle {
+                .wow__search__pos_placeholders__mainCircle {
                     width: 24vw;
                     height: 24vw;
                     outline: 1px dashed blue;
@@ -197,7 +197,7 @@
                         width: 42vw;
                         height: 42vw;
                     }
-                    .ct_wow__search__pos_placeholders__mainCircle__placeholder {
+                    .wow__search__pos_placeholders__mainCircle__placeholder {
                         width: 18vw;
                         height: 18vw;
                         outline: 1px dashed blue;
@@ -205,7 +205,7 @@
                         transform: translate(-50%, -50%);
                     }
                 }
-                .ct_wow__search__pos_placeholders__firstCircle {
+                .wow__search__pos_placeholders__firstCircle {
                     width: 105%;
                     height: 105%;
                     outline: 1px dashed green;
@@ -222,7 +222,7 @@
                         width: 110vw;
                         height: 110vw;
                     }
-                    .ct_wow__search__pos_placeholders__firstCircle__placeholder {
+                    .wow__search__pos_placeholders__firstCircle__placeholder {
                         width: 10vw;
                         height: 10vw;
                         outline: 1px dashed green;
@@ -230,7 +230,7 @@
                         transform: translate(-50%, -50%);
                     }
                 }
-                .ct_wow__search__pos_placeholders__secondCircle {
+                .wow__search__pos_placeholders__secondCircle {
                     width: 145%;
                     height: 145%;
                     outline: 1px dashed red;
@@ -243,7 +243,7 @@
                         width: 150vw;
                         height: 150vw;
                     }
-                    .ct_wow__search__pos_placeholders__secondCircle__placeholder {
+                    .wow__search__pos_placeholders__secondCircle__placeholder {
                         width: 6vw;
                         height: 6vw;
                         outline: 1px dashed red;
@@ -254,7 +254,7 @@
             }
         }
     }
-    #ct_wow__search__close {
+    #wow__search__close {
         position: absolute;
         right: 20px;
         top: 20px;
@@ -275,7 +275,7 @@
             height: 100%;
         }
     }
-    .ct_wow__search__sprite {
+    .wow__search__sprite {
         display: none;
         visibility: hidden;
     }
